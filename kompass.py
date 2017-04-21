@@ -1,12 +1,13 @@
+# -*- coding: utf-8 -*-
 import time
 import math
 import bluepy
-from bluepy.bluepy import sensortag
+from bluepy import sensortag
 
 MAGNETIC_DECLINATION = 2.0 # Zürich CH
 
 print "=== init"
-tag = sensortag.SensorTag('XX:XX:XX:XX:XX:XX')
+tag = sensortag.SensorTag('24:71:89:BD:10:01')
 
 time.sleep(1.0)
 tag.magnetometer.enable()
